@@ -7,6 +7,13 @@ import re
 
 
 def scrap_precio(web_michelin):
+    '''
+    Get the text into the li tag with class name = restaurant-details__heading-price
+    Args:
+        object dataframe value
+    Returns:
+        String
+    '''
     web =  web_michelin
     html = requests.get(web)
     res = BeautifulSoup(html.content,"html.parser")
@@ -31,6 +38,13 @@ def scrap_precio(web_michelin):
 
 
 def cambio_a_euro(datos):
+    '''
+    Get a especific kind of values and makes the proper conversion depends of the coin
+    Args:
+        object Dataframe value
+    Retuns:
+        list
+    '''
     
     if datos == 0:
         return 0
@@ -61,6 +75,13 @@ def cambio_a_euro(datos):
 
 
 def media_precios(datos):
+    '''
+    Get one or two values and makes the mean
+    Args:
+        object Dataframe value
+    Retuns:
+        float
+    '''
     
     if datos == 0:
         return 0
@@ -75,6 +96,14 @@ def media_precios(datos):
 
 
 def scrap_telefono(web_michelin):
+    '''
+    Get the text into the span tag with class name =  flex-fill
+    Args:
+        object dataframe value
+    Returns:
+        String
+    '''
+
     web =  web_michelin
     html = requests.get(web)
     res = BeautifulSoup(html.content,"html.parser")
@@ -91,6 +120,13 @@ def scrap_telefono(web_michelin):
 
 
 def scrap_mail_propio(datos):
+    '''
+    Get the text into the div tag with class name = collapse__block-title d-flex
+    Args:
+        object dataframe value
+    Returns:
+        String
+    '''
     web =  datos
     html = requests.get(web)
     res = BeautifulSoup(html.content,"html.parser")
@@ -113,6 +149,13 @@ def scrap_mail_propio(datos):
 
 
 def scrap_horarios(datos):
+    '''
+    Get the text into the div tag with class name = open__time-hour flex-fill
+    Args:
+        object dataframe value
+    Returns:
+        String
+    '''
     try:
         web =  datos
         html = requests.get(web)
