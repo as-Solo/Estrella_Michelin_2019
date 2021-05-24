@@ -5,7 +5,7 @@ El objetivo de este proyecto es poder tratar los datos dados desde un csv para a
 
 ![portada_Michelin.jpg](https://github.com/as-Solo/Estrella_Michelin_2019/blob/main/img/portada_Michelin.jpg)
 
-### Table of Contents
+### Contenido
 
 1. Información General
 2. Tratamiento de la información
