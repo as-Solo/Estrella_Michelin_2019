@@ -3,7 +3,7 @@
 El objetivo de este proyecto es poder tratar los datos dados desde un csv para ampliar la información del mismo csv de varias maneras, ya sea operando con la información dada o scrapeando desde las distintas webs que ofrece la base de datos. Para así poder tener una información con la que trabajar y llevar a cabo nuestras hipótesis.
 
 
-![portada_Michelin.jpg](attachment:portada_Michelin.jpg)
+![portada_Michelin.jpg](https://github.com/as-Solo/Estrella_Michelin_2019/blob/main/img/portada_Michelin.jpg)
 
 ### Table of Contents
 
